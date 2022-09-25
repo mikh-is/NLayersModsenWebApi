@@ -17,7 +17,6 @@ namespace NLayerApp.DAL.Repositories
         public EFUnitOfWork(DbContextOptions options, IRepository<EventEntity> repository)
         {
             db = new EventContext(options);
-            //eventRepository = repository;
         }
         public IRepository<EventEntity> Events
         {
