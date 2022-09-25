@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NLayerApp.DAL</id>
+    <version>1.0.0</version>
+    <authors>NLayerApp.DAL</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.EntityFrameworkCore" version="6.0.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="6.0.9" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Asus\source\repos\NLayerApp.DAL\bin\Debug\net6.0\NLayerApp.DAL.runtimeconfig.json" target="lib\net6.0\NLayerApp.DAL.runtimeconfig.json" />
+    <file src="C:\Users\Asus\source\repos\NLayerApp.DAL\bin\Debug\net6.0\NLayerApp.DAL.dll" target="lib\net6.0\NLayerApp.DAL.dll" />
+  </files>
+</package>
