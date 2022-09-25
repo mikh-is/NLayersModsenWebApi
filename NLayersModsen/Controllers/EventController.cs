@@ -29,16 +29,16 @@ namespace NLayerApp.WEB.Controllers
         [Route("GetAll")]
         public async Task<ActionResult> GetAll()
         {
-            var _event = await Task.FromResult(eventService.GetAll());
+            var _event = await eventService.GetAllAsync();
             return Ok(_event);
         }
 
-        // get all events request
+        // get event by id
         [HttpGet]
         [Route("GetById/{id:int}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
-            EventEntity _event = await Task.FromResult(eventService.Get(id));
+            var _event = await eventService.GetAsync(id);
             return Ok(_event);
         }
 
@@ -56,7 +56,7 @@ namespace NLayerApp.WEB.Controllers
         [Route("{id:int}")]
         public async Task<IActionResult> Update([FromRoute] int id, AddEventDTO item)
         {
-            var getIssueEvent = await Task.FromResult(eventService.Update(id, item));
+            var getIssueEvent = await eventService.UpdateAsync(id, item);
             return Ok(getIssueEvent);
         }
 
@@ -65,7 +65,7 @@ namespace NLayerApp.WEB.Controllers
         [Route("Delete/{id:int}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
-            var _event = await Task.FromResult(eventService.Get(id));
+            var _event = await eventService.GetAsync(id);
             if (_event != null)
             {
                 eventService.Delete(id);

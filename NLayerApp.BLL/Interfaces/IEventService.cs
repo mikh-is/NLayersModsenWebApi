@@ -11,10 +11,10 @@ namespace NLayerApp.BLL.Interfaces
 {
     public interface IEventService
     {
-        IEnumerable<EventDTO> GetAll(); // getting all events
+        Task<IEnumerable<EventDTO>> GetAllAsync(); // getting all events
         EventEntity Create(AddEventDTO addEventDto); // creating an event
-        EventEntity Get(int id); // getting/reading 
-        EventEntity Update(int id, AddEventDTO addEventDTO); // updating an event
+        Task<EventEntity> GetAsync(int id); // getting/reading 
+        Task<EventEntity> UpdateAsync(int id, AddEventDTO addEventDTO); // updating an event
         void Delete(int id);    // deleting an event
         void Dispose();
     }

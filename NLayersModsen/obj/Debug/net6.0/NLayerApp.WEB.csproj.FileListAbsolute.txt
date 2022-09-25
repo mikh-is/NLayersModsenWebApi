@@ -128,6 +128,12 @@ C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\WebApplication2\obj\Debug\net
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\WebApplication2\obj\Debug\net6.0\NLayerApp.WEB.pdb
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\WebApplication2\obj\Debug\net6.0\NLayerApp.WEB.genruntimeconfig.cache
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\WebApplication2\obj\Debug\net6.0\ref\NLayerApp.WEB.dll
+C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.csproj.AssemblyReference.cache
+C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.AssemblyInfo.cs
+C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\bin\Debug\net6.0\appsettings.json
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\bin\Debug\net6.0\NLayerApp.WEB.exe
@@ -177,13 +183,7 @@ C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\bin\Debug\net6.
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\bin\Debug\net6.0\NLayerApp.DAL.dll
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\bin\Debug\net6.0\NLayerApp.BLL.pdb
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\bin\Debug\net6.0\NLayerApp.DAL.pdb
-C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.csproj.AssemblyReference.cache
-C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.AssemblyInfoInputs.cache
-C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.AssemblyInfo.cs
-C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\NLayerApp.WEB.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Asus\Documents\GitHub\NLayersModsenWebApi\NLayersModsen\obj\Debug\net6.0\scopedcss\bundle\NLayerApp.WEB.styles.css

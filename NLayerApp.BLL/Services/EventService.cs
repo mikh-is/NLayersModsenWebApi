@@ -26,16 +26,17 @@ namespace NLayerApp.BLL.Services
             this.Database = database;
         }
         // getting all events from a table
-        public IEnumerable<EventDTO> GetAll()
+        public async Task<IEnumerable<EventDTO>> GetAllAsync()
         {
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<EventEntity, EventDTO>()).CreateMapper();
-            return mapper.Map<IEnumerable<EventEntity>, List<EventDTO>>(Database.Events.GetAll());
+            var allEvents = await Database.Events.GetAll();
+            return await Task.FromResult(mapper.Map<IEnumerable<EventEntity>, List<EventDTO>>(allEvents));
         }
-        // reading an event by id from a table
-        public EventEntity Get(int id)
-        {
 
-            var _event = Database.Events.Get(id);
+        // reading an event by id from a table
+        public async Task<EventEntity> GetAsync(int id)
+        {
+            var _event = await Database.Events.GetAsync(id);
             if (_event == null)
             {
                 throw new ValidationException("the Event doesn't exist", "");
@@ -44,14 +45,15 @@ namespace NLayerApp.BLL.Services
         }
 
         // updating a row in a table
-        public EventEntity Update(int id, AddEventDTO eventDto)
+        public async Task<EventEntity> UpdateAsync(int id, AddEventDTO eventDto)
         {
-                var _event = Database.Events.Get(id);
+                var _event = await Database.Events.GetAsync(id);
                 if (eventDto == null)
                     throw new ArgumentNullException(nameof(_event));
 
                 var mapper = new MapperConfiguration(cfg => cfg.CreateMap<AddEventDTO, EventEntity>()).CreateMapper();
                 _event = mapper.Map(eventDto, _event);
+
                 Database.Save();
                 return _event;
         }

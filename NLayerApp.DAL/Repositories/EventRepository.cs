@@ -1,4 +1,5 @@
-﻿using NLayerApp.DAL.EF;
+﻿using Microsoft.EntityFrameworkCore;
+using NLayerApp.DAL.EF;
 using NLayerApp.DAL.Entities;
 using NLayerApp.DAL.Interfaces;
 using System;
@@ -20,15 +21,20 @@ namespace NLayerApp.DAL.Repositories
         }
 
         // get all events
-        public IEnumerable<EventEntity> GetAll()
+        public async Task<IEnumerable<EventEntity>> GetAll()
         {
-            return db.Events;
+            return await db.Events.ToListAsync();
         }
 
         // Get event by Id
-        public EventEntity Get(int id)
+        public async Task<EventEntity> GetAsync(int id)
         {
-            return db.Events.Find(id) ?? throw new ArgumentNullException(nameof(id));
+            var _event = await db.Events.FindAsync(id);
+            if (_event == null)
+            {
+                throw new ArgumentNullException(nameof(_event));
+            }
+            return _event;
         }
 
         // create event 
