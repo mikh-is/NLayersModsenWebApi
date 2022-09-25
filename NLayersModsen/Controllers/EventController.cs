@@ -72,22 +72,5 @@ namespace NLayerApp.WEB.Controllers
             }
             return Ok(_event);
         }
-
-
-        //// delete event by id
-        //[HttpDelete]
-        //[Route("DeleteById/{id:int}")]
-        //public async Task<IActionResult> DeleteById([FromRoute] int id)
-        //{
-        //    var _event = await dbContext.Events.FindAsync(id);
-        //    if (_event != null)
-        //    {
-        //        dbContext.Events.Remove(_event);
-        //        await dbContext.SaveChangesAsync();
-        //        return Ok(_event);
-        //    }
-
-        //    return NotFound();
-        //}
     }
 }

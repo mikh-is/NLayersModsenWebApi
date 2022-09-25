@@ -18,30 +18,9 @@ namespace NLayerApp.WEB
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // JWT Bearer configure
-
             builder.Services.AddAuthorization();
 
-            //builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //    .AddJwtBearer(o =>
-            //    {
-            //        o.TokenValidationParameters = new TokenValidationParameters
-            //        {
-            //            ValidateIssuer = true,
-            //            ValidIssuer = AuthOptions.ISSUER,
-
-            //            ValidateAudience = true,
-            //            ValidAudience = AuthOptions.AUDIENCE,
-
-            //            ValidateLifetime = true,
-
-            //            IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
-            //            ValidateIssuerSigningKey = true,
-            //        };
-            //    });
-
             // Add services to the container.
-
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(s =>
@@ -50,7 +29,7 @@ namespace NLayerApp.WEB
                 {
                     Version = "v1",
                     Title = "WebAPI",
-                    Description = "web api for modsen",
+                    Description = "web api for Modsen",
                     Contact = new OpenApiContact
                     {
                         Name = "Mikhail Ivanov",
