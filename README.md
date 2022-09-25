@@ -1,2 +1,15 @@
-# NLayersModsenWebApi
- Re-uploading a test task for the company Modsen
+# ModsenWebApiTask
+
+## Функционал Web API:
+1. Получение списка всех событий;
+2. Получение определённого события по его Id;
+3. Регистрация нового события;
+4. Изменение информации о существующем событии;
+5. Удаление события.
+
+# Реализована архитектура NLayers
+
+## Запуск проекта
+- Открыть решение `NLayersModsen.sln`
+- Сделать `Rebuild Solution` (Build -> Rebuild Solution)
+- Нажать `CTRL + F5`
